@@ -263,8 +263,8 @@ img {
   margin-left: 30px;
 }
 .ourteam-text {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .ourteam-name {
   font-weight: 500;
