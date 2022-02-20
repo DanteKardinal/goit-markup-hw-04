@@ -77,7 +77,7 @@ img {
   overflow: hidden;
 }
 /* Подсвечивание текущей страницы */
-.active-link:visited {
+.nav-link.nav-current {
   color: var(--hover-cont-link);
 }
 
@@ -167,7 +167,12 @@ img {
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
-  background-color: #2f303a;
+
+  background-image: url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1600px;
+  background-color: #c4c4c4;
 }
 .hero-title {
   margin-right: auto;
