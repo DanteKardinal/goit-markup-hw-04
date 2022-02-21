@@ -161,18 +161,28 @@ img {
 .comm-item + .comm-item {
   margin-left: 50px;
 }
+.comm-link::before {
+  content: '';
+}
 
 /* Основной контент страницы */
 /* Секция hero с заказом услуг */
+
+.overlay {
+  background-color: #c4c4c4;
+}
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
 
-  background-image: url(../images/hero.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero.jpg);
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: 1600px;
-  background-color: #c4c4c4;
+  background-position: top 50% 50%;
 }
 .hero-title {
   margin-right: auto;
@@ -185,7 +195,7 @@ img {
   text-transform: uppercase;
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.4;
+  line-height: 1.36;
   color: #ffffff;
 }
 .primary-button {
@@ -262,7 +272,9 @@ img {
 }
 .ourteam-item {
   background-color: #ffffff;
-  /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .ourteam-item + .ourteam-item {
   margin-left: 30px;
@@ -286,6 +298,11 @@ img {
   line-height: 19px;
   text-align: center;
   letter-spacing: var(--primary-letter-spacing);
+}
+
+/* Наши клиенты */
+.clients {
+  display: flex;
 }
 
 /* Footer */
