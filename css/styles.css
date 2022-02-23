@@ -67,11 +67,7 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.icon {
-  display: block;
-  margin: 0;
-  padding: 0;
-}
+
 /* Cкрытый заголовко h2 */
 .visually-hidden {
   position: absolute;
@@ -159,26 +155,25 @@ img {
 .comm-list {
   display: flex;
 }
-.comm-item + .comm-item {
-  margin-left: 30px;
+.comm-item:not(:last-child) {
+  margin-right: 30px;
 }
-
 .comm-link {
-  display: inline-flex;
+  display: flex;
   align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
-  fill: var(--comm-fill);
 }
-
 .comm-link:hover,
 .comm-link:focus {
   color: var(--hover-cont-link);
-  fill: var(--hover-cont-link);
 }
-
 .icon-mail,
 .icon-tel {
+  fill: currentColor;
   margin-right: 11px;
 }
 
