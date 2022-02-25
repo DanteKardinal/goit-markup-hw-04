@@ -392,6 +392,7 @@ img {
 }
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 .address-container {
   margin-right: 70px;
@@ -425,9 +426,9 @@ img {
   color: var(--hover-cont-link);
 }
 /* Социальные сети футера */
-.footer-social {
-  align-items: baseline;
-}
+/* .footer-social {
+
+} */
 .footer-social-title {
   margin-bottom: 20px;
 
