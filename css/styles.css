@@ -306,7 +306,9 @@ img {
 }
 .ourteam-text {
   padding-top: 30px;
-  margin-bottom: 16px;
+  padding-right: 32px;
+  padding-bottom: 30px;
+  padding-left: 32px;
 }
 .ourteam-name {
   font-weight: 500;
@@ -327,10 +329,8 @@ img {
 /* Ссылки на социальные сети */
 .team-social-list {
   display: flex;
-  align-items: center;
-  padding-right: 32px;
-  padding-bottom: 30px;
-  padding-left: 32px;
+  justify-content: center;
+  margin-top: 16px;
 }
 
 .team-social-item + .team-social-item {
@@ -426,7 +426,7 @@ img {
 }
 /* Социальные сети футера */
 .footer-social {
-  margin-top: 12px;
+  align-items: baseline;
 }
 .footer-social-title {
   margin-bottom: 20px;
@@ -500,14 +500,17 @@ img {
   margin-top: calc(-1 * var(--card-set-gap));
   margin-left: calc(-1 * var(--card-set-gap));
 }
-.ourpjc-list {
+.ourpjc-link {
   margin-top: var(--card-set-gap);
   margin-left: var(--card-set-gap);
   flex-basis: calc(100% / 3 - var(--card-set-gap));
   cursor: pointer;
 }
-.ourpjc-list:hover,
-.ourpjc-list:focus {
+.ourpjc-link {
+  display: block;
+}
+.ourpjc-link:hover,
+.ourpjc-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -521,6 +524,7 @@ img {
 .ourprj-text {
   margin-top: 4;
 
+  color: var(--primary-text-color);
   font-size: 16px;
   line-height: 30px;
   letter-spacing: var(--primary-letter-spacing);
